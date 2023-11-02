@@ -1,0 +1,5 @@
+[2023-10-29T15:59:44.742907+00:00] my_log.ERROR: This is some error. [] []
+[2023-10-29T15:59:44.745110+00:00] my_log.WARNING: This is some warning. [] []
+[2023-10-29T15:59:44.745180+00:00] my_log.NOTICE: This is some notice. [] []
+[2023-10-29T15:59:44.745240+00:00] my_log.INFO: This is some info. [] []
+[2023-10-29T15:59:44.745297+00:00] my_log.DEBUG: This is some debug. [] []
