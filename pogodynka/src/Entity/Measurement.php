@@ -64,4 +64,9 @@ class Measurement
 
         return $this;
     }
+
+    public function getFahrenheit(): ?string
+    {
+        return $this->calsius === null ? null : (string)round($this->calsius * 1.8 + 32);
+    }
 }
