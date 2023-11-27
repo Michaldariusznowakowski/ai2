@@ -10,9 +10,13 @@
     <h1>Weather in {{ location.city }}, {{ location.country }}</h1>
 
     <ul>
+        {% if measurements|length == 0 %}
+            <li>No measurements yet</li>
+        {% else %}
         {% for measurement in measurements %}
             <li>{{ measurement.date|date('d.m.Y') }}: {{ measurement.calsius }}&deg;C</li>
         {% endfor %}
+        {% endif %}
     </ul>
 </main>
 {% endblock %}

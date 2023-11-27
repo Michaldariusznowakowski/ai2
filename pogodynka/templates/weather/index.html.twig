@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{# @var location \App\Entity\Location #}
+{# @var weather \App\Entity\Weather #}
+{% block body%}
+<main>
+    <ul>
+        {% for location in locations %}
+            <li><a href="/weather/{{ location.country }}/{{location.city}}">{{ location.city }}, {{ location.country }}</a></li>
+        {% endfor %}
+    </ul>
+</main>
+{% endblock %}

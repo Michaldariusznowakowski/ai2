@@ -10,4 +10,4 @@ app_logout:
 default:
     path: /
     # show welcome.html.twig
-    controller: App\Controller\WeatherController::index
+    controller: App\Controller\WeatherController::welcome
