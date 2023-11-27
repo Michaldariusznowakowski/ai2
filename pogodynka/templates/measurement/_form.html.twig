@@ -2,5 +2,7 @@
 <div class="form-group">
     {{ form_widget(form) }}
     </div>
+    {% if is_granted('ROLE_MEASUREMENT_EDIT') %}
     <button class="btn btn-primary">{{ button_label|default('Save') }}</button>
+    {% endif %}
 {{ form_end(form) }}
